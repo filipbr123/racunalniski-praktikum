@@ -65,3 +65,7 @@ background-color: rgb(51, 0, 102, 0.1);
 .slika p:last-child {
     font-size: 0.8em;
 }
+
+a::before {
+    content: "✓";
+}
