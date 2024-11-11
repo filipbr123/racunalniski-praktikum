@@ -111,14 +111,11 @@ imamo pet delovnih dni, je velikost naše tabele 65 polj. Velikost te tabele tor
 koliko ur na teden obravnavamo. Ker se šolski tedni periodično ponavljajo, je seveda
 dovolj, če podamo zasedenost le za en teden.
 
-
-% Besede `bool`, `true`, `false` v spodnjem odstavku naj bodo napisane v pisavi 
-% za izvorno kodo.
 Tip vrednosti tabele ni striktno določen. Tako bi nekateri programerji uporabili
 celoštevilsko tabelo, kjer bi vrednost 1 pomenila, da je oseba zasedena, vrednost 0
 pa bi predstavljala njeno dosegljivost. Podobno bi postopali, če bi izbrali logični
-tip (npr. bool v C++), kjer bi vrednost true predstavljala
-dosegljivost, false pa zasedenost.
+tip (npr. \texttt{bool} v C++), kjer bi vrednost \texttt{true} predstavljala
+dosegljivost, \texttt{false} pa zasedenost.
 
 \subsection{Omejitve}
 
@@ -134,20 +131,17 @@ ker so mu izdelalovalci urnika dodelili dve predavanji v istem časovnem terminu
 je preprost - vsak urnik mora biti izdelan tako, da zadošča vsem strogim omejitvam.
 Poglejmo si nekaj omejitev, ki jih urnik ne sme kršiti:
 
-% Vsaka od vrstic v okolju `itemize` je en element naštevanja.
-% začetek okolja itemize
-   V urnik moramo razdeliti vse ure vseh predmetov.
-   Noben profesor ne sme imeti več predavanj hkrati.
-   Nobena skupina ne sme imeti več predavanj hkrati.
-   Nobena predavalnica ne sme biti dodeljena večim predavanjem hkrati.
-   Predavalnica mora imeti zadostno kapaciteto.
-   Predavanja posebne vrste (npr. vaje iz računalništva) se morajo izvajati v ustrezni predavalnici.
-   Urnik mora zadoščati zastavljenemu časovnemu okvirju (npr. od sedmih zjutraj do osmih zvečer).
-% konec okolja itemize
+   \begin{itemize}
+      \item V urnik moramo razdeliti vse ure vseh predmetov.
+      \item Noben profesor ne sme imeti več predavanj hkrati.
+      \item Nobena skupina ne sme imeti več predavanj hkrati.
+      \item Nobena predavalnica ne sme biti dodeljena večim predavanjem hkrati.
+      \item Predavalnica mora imeti zadostno kapaciteto.
+      \item Predavanja posebne vrste (npr. vaje iz računalništva) se morajo izvajati v ustrezni predavalnici.
+      \item Urnik mora zadoščati zastavljenemu časovnemu okvirju (npr. od sedmih zjutraj do osmih zvečer).
+   \end{itemize}
 
-% Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
-% To popravite z ukazom `\noindent` ali pa tako, da odstranite prazno vrstico.
-% (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
+\noindent
 Urnik, ki zadošča vsem strogim omejitvam, imenujemo zadosten urnik. Zadostni urnik tako ne
 krši nobenega izmed zgoraj naštetih načel, a še zdaleč ne ustreza merilom kakovostnega urnika.
 
@@ -163,19 +157,16 @@ V splošnem ne zahtevamo, da urnik zadošča vsem šibkim omejitvam, ker je to p
 Resda pa so prav šibke omejitve tiste, ki določajo kakovost urnika, in dober algoritem bo
 poskrbel, da se bo zadostilo večini le-teh. Naštejmo nekaj izmed njih:
 
-% Vsaka od vrstic v okolju `itemize` je en element naštevanja.
-% začetek okolja itemize
-   Urnik naj vsebuje čim manj prostih ur za profesorje in študente.
-   Študentje naj se čim manj selijo iz predavalnic.
-   Predmet z veliko urami naj bo enakomerno porazdeljen čez celotno periodo (teden).
-   Predavanja naj se izvajajo ob urah, ki so najugodnejše za poučevanje.
-   V petek naj se študentom dodeli čim manj predavanj.
-   Študentom se naj v času kosila dodeli prosta ura.
-% konec okolja itemize
+  \begin{itemize}
+   \item  Urnik naj vsebuje čim manj prostih ur za profesorje in študente.
+   \item Študentje naj se čim manj selijo iz predavalnic.
+   \item Predmet z veliko urami naj bo enakomerno porazdeljen čez celotno periodo (teden).
+   \item Predavanja naj se izvajajo ob urah, ki so najugodnejše za poučevanje.
+   \item V petek naj se študentom dodeli čim manj predavanj.
+   \item Študentom se naj v času kosila dodeli prosta ura.
+  \end{itemize}
 
-% Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
-% To popravite z ukazom `\noindent` ali pa tako, da odstranite prazno vrstico.
-% (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
+\noindent
 Obstaja še mnogo drugih šibkih omejitev, ki se jim je smiselno posvetiti. Nikomur najbrž ne
 bi bilo preveč všeč, če bi uram športne vzgoje sledila še vrsta predavanj, saj bi tako
 prepoteni in izčrpani študentje težko sledili tempu pouka.
@@ -286,9 +277,7 @@ Naslednje vrstice bodo pojasnile, kako implementirati postopek požrešne metode
    }
 \end{verbatim}
 
-% Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
-% To popravite z ukazom `\noindent` ali pa tako, da odstranite prazno vrstico.
-% (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
+\noindent
 Zgoraj predstavljena shema je le grob opis postopka, ki ga nad urnikom izvaja požrešna metoda,
 zato si je smiselno podrobneje ogledati posamezne korake.
 
