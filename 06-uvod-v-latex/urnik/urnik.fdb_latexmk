@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1731347540.06639 "c:/Users/fb48639/Desktop/racunalniski-praktikum/06-uvod-v-latex/urnik/urnik.tex" "urnik.pdf" "urnik" 1731347540.90554 0
+["pdflatex"] 1731349054.96823 "c:/Users/fb48639/Desktop/racunalniski-praktikum/06-uvod-v-latex/urnik/urnik.tex" "urnik.pdf" "urnik" 1731349055.81533 0
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecbx0900.tfm" 993061954 3200 f959f56c26f697d341ba38dba18fe1f8 ""
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecbx1000.tfm" 993061956 3200 328792ff19833a39406f06fa0555a6dc ""
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecbx1200.tfm" 993061958 3200 b8d69bc738e5ef3e08cefeef3109ff56 ""
@@ -9,7 +9,9 @@
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecrm1200.tfm" 993062126 3152 4850ff0163852b7fab34bd55e1197f28 ""
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecrm1440.tfm" 993062128 3168 3bd7b08ba4330af81521911744311212 ""
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecrm1728.tfm" 993062128 3168 11457c8185ce67fb79662ba8b03d6db1 ""
+  "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecti1000.tfm" 993062320 2840 5606e1a681c23005308de9d61c09a8ff ""
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ectt1000.tfm" 993062340 1348 d70ddf2d5d512b838e50a335e385e919 ""
+  "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993062508 1436 c7f957a372ef2fbe93c0982f96625e12 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmmi8.tfm" 1136765053 1520 eccf95517727cb11801f4f1aee3a21b4 ""
@@ -39,12 +41,14 @@
   "C:/Users/fb48639/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk" 1731346761 23808 5a67bcc7a4e605c947995facc09d6024 ""
   "C:/Users/fb48639/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk" 1731347001 28440 ce7216e1303ddc37c971dd9f3b5b83f2 ""
   "C:/Users/fb48639/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1728.pk" 1731347002 42516 3c8d07a012a7d1b9a1569a923953dc78 ""
+  "C:/Users/fb48639/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1000.pk" 1731348794 31892 207cbae222303669c4f64984021224d7 ""
   "C:/Users/fb48639/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk" 1731347302 20028 588474da52e1019fa759627fcbf90a5d ""
+  "C:/Users/fb48639/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1731348487 11548 b5ad8bc5341e17dbee099b83c2431009 ""
   "C:/Users/fb48639/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1731343510 24254909 19345ad027fa32252dffd8e1c04b2e93 ""
   "C:/Users/fb48639/AppData/Roaming/MiKTeX/tex/latex/babel-slovenian/slovene.ldf" 1612951983 4834 98ee81640c5ff33462d182c4f24765fe ""
-  "c:/Users/fb48639/Desktop/racunalniski-praktikum/06-uvod-v-latex/urnik/urnik.tex" 1731347539 27629 4e021f791661a10f40538dff8974e250 ""
-  "urnik.aux" 1731347540 1576 e6cff626cbcad2fc8484739285bd6917 "pdflatex"
-  "urnik.tex" 1731347539 27629 4e021f791661a10f40538dff8974e250 ""
+  "c:/Users/fb48639/Desktop/racunalniski-praktikum/06-uvod-v-latex/urnik/urnik.tex" 1731349054 26669 abdf52a9597bb2480f15a3df09278e6f ""
+  "urnik.aux" 1731349055 1576 2bb944d3ebb7091d6dff79512687d11a "pdflatex"
+  "urnik.tex" 1731349054 26669 abdf52a9597bb2480f15a3df09278e6f ""
   (generated)
   "urnik.aux"
   "urnik.log"
