@@ -26,7 +26,7 @@ prav začel? Zakaj nam vsaj v petek niso malo popustili? Kdo je sploh lahko izde
 takšen urnik?
 
 To so vprašanja, na katera seveda nikoli nismo dobili odgovora, čeprav je le-ta na zadnje
-vprašanje več kot očiten - izdelala ga je oseba, ki so ji to delo naprtili. Naprtili je
+vprašanje več kot očiten -- izdelala ga je oseba, ki so ji to delo naprtili. Naprtili je
 zelo primerna beseda, saj gre za zahtevno opravilo, ki izdelovalcu urnikov nemalokrat
 pusti ogromno sivih las. Ne bi se rad postavil v kožo ubožca, ki konča z izdelavo urnika,
 nakar ves zgrožen ugotovi, da je spregledal prekrivanje dveh šolskih ur, kar pomeni, da
@@ -128,7 +128,7 @@ pa je tisto, kar odlikuje dober urnik.
 
 Verjetno še niste videli profesorja, ki vsakih pet minut teče iz ene predavalnice v drugo,
 ker so mu izdelalovalci urnika dodelili dve predavanji v istem časovnem terminu. Razlog
-je preprost - vsak urnik mora biti izdelan tako, da zadošča vsem strogim omejitvam.
+je preprost -- vsak urnik mora biti izdelan tako, da zadošča vsem strogim omejitvam.
 Poglejmo si nekaj omejitev, ki jih urnik ne sme kršiti:
 
    \begin{itemize}
@@ -158,7 +158,7 @@ Resda pa so prav šibke omejitve tiste, ki določajo kakovost urnika, in dober a
 poskrbel, da se bo zadostilo večini le-teh. Naštejmo nekaj izmed njih:
 
   \begin{itemize}
-   \item  Urnik naj vsebuje čim manj prostih ur za profesorje in študente.
+   \item Urnik naj vsebuje čim manj prostih ur za profesorje in študente.
    \item Študentje naj se čim manj selijo iz predavalnic.
    \item Predmet z veliko urami naj bo enakomerno porazdeljen čez celotno periodo (teden).
    \item Predavanja naj se izvajajo ob urah, ki so najugodnejše za poučevanje.
@@ -228,8 +228,8 @@ nato iz njih izdela celovit urnik. Te vhodne podatke smo si skupaj s strogimi in
 omejitvami že podrobneje ogledali v prvem delu, tako da se lahko tokrat osredotočimo na
 osrčje programa.
 
-Za lažjo ilustracijo bi lahko potegnili kar nekaj vzporednic med programiranjem in - ne
-boste verjeli - kuhanjem. Za kuhanje potrebujemo recept, ki je sestavljen iz dveh delov.
+Za lažjo ilustracijo bi lahko potegnili kar nekaj vzporednic med programiranjem in  --  ne
+boste verjeli -- kuhanjem. Za kuhanje potrebujemo recept, ki je sestavljen iz dveh delov.
 Prvi del predstavljajo sestavine, ki jih potrebujemo za kuhanje, glavni del pa predstavlja
 postopek, kako iz teh sestavin pripraviti okusno kosilo. Postopki kuhe se med seboj
 razlikujejo in nekateri pripeljejo do nekoliko slastnejšega obroka kot drugi.
@@ -312,24 +312,21 @@ naraščajoča zmogljivost procesorjev le voda na njihov mlin, saj tako lahko v 
 so lokalni ali globalni optimumi.
 
 Če želimo spoznati optimizacijske metode, se moramo najprej seznaniti z dvema pojmoma.
-/Operacija/ je vsaka sprememba oziroma poseg v urnik med izvajanjem optimizacije.
+\emph{Operacija} je vsaka sprememba oziroma poseg v urnik med izvajanjem optimizacije.
 Na primeru urnika si oglejmo, katere so smiselne operacije:
 
-% Vsaka od vrstic v okolju `itemize` je en element naštevanja.
-% začetek okolja itemize
-   /Vstavljanje/ srečanja v urnik.
-   /Brisanje/ srečanja iz urnika.
-   /Zamenjava/ dveh srečanj v urnik.
-% konec okolja itemize
+\begin{itemize}
+   \item \emph{Vstavljanje} srečanja v urnik.
+   \item \emph{Brisanje} srečanja iz urnika.
+   \item \emph{Zamenjava} dveh srečanj v urnik.
+\end{itemize}
 
-% Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
-% To popravite z ukazom `\noindent` ali pa tako, da odstranite prazno vrstico.
-% (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
-/Okolica/ operacije je množica vseh možnih sprememb, ki jih lahko s to operacijo
+\noindent
+\emph{Okolica} operacije je množica vseh možnih sprememb, ki jih lahko s to operacijo
 opravimo na nekem koraku optimizacijskega postopka. Okolica zamenjave dveh srečanj v urniku
 je torej množica vseh možnih zamenjav srečanj v trenutnem urniku.
 
-/Sistem okolic/ je množica vseh možnih sprememb, ki jih lahko z vsemi operacijami iz
+\emph{Sistem okolic} je množica vseh možnih sprememb, ki jih lahko z vsemi operacijami iz
 okolic sistema opravimo na nekem koraku optimizacijskega postopka. Oboroženi z novimi pojmi
 se podajmo v naslednje vrstice.
 
@@ -355,36 +352,32 @@ Nadgradnja lokalnega vzpenjanja je jasno razvidna iz naslednje sheme.
    }
 \end{verbatim}
 
-% Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
-% To popravite z ukazom `\noindent` ali pa tako, da odstranite prazno vrstico.
-% (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
+\noindent
 Nadobudnežem priporočamo, da najprej sami razmislijo, kaj je globja vsebina posameznih
 korakov, in si šele nato ogledajo njihov natančen opis.
 
-% začetek okolja enumerate
-   Zunanjo zanko izvajamo, dokler ne dosežemo enega izmed ustavitvenih pogojev.
+\begin{enumerate}
+   \item Zunanjo zanko izvajamo, dokler ne dosežemo enega izmed ustavitvenih pogojev.
    Če nekaj časa kljub spreminjanju operacij nad urnikom vedno znova obstojimo na isti
    rešitvi, potem to najverjetneje pomeni, da smo prišli do lokalnega ekstrema. Drugi
    ustavitveni pogoj je zadovoljivo velika vrednost kriterijske funkcije.
 
-   Naključno izberemo okolico trenutne rešitve. Z okolico izberemo tudi operacijo,
+   \item Naključno izberemo okolico trenutne rešitve. Z okolico izberemo tudi operacijo,
    ki jo izvajamo na tem koraku (npr. zamenjava dveh srečanj).
 
-   Če v tem koraku izberemo tisto zamenjavo srečanj, ki izmed vseh možnih najbolj
+   \item Če v tem koraku izberemo tisto zamenjavo srečanj, ki izmed vseh možnih najbolj
    poveča vrednost kriterijske funkcije, potem postopamo enako, kot požrešna metoda. Če
    želimo nadgraditi postopek lokalnega vzpenjanja, ne potrebujemo nujno najboljše možne
    zamenjave, ampak prvo, ki poveča vrednost kriterijske funkcije. Izjemoma dovolimo tudi
    tisto zamenjavo, ki vrednost kriterijske funkcije nekoliko zmanjša, kar se na prvi
    pogled zdi nesmiselno, nas pa dolgoročno pripelje do boljših rešitev.
 
-   Izbrano zamenjavo dveh srečanj izvedemo na trenutnem urniku. Vidimo, da en korak
+   \item Izbrano zamenjavo dveh srečanj izvedemo na trenutnem urniku. Vidimo, da en korak
    lokalnega vzpenjanja res predstavlja eno spremembo nad urnikom, v konkretnem primeru
    smo izvedli (eno) zamenjavo dveh srečanj.
-% konec okolja enumerate
+\end{enumerate}
 
-% Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
-% To popravite z ukazom `\noindent` ali pa tako, da odstranite prazno vrstico.
-% (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
+\noindent
 Na tak način izboljšana metoda lokalnega vzpenjanja je časovno veliko zahtevnejša od
 požrešne metode, saj se vrednost kriterijske funkcije ne povečuje tako drastično. Vseeno
 pa vidimo, da se počasi približujemo lokalnemu maksimumu in sčasoma nas bo postopek
@@ -392,7 +385,7 @@ pripeljal do njega. Naključna izbira okolic ter sprejemanje ne nujno najboljše
 nas varujeta, da ne bomo obstali v prvem lokalnem maksimumu, ampak bomo vedno znova
 iskali boljše rešitve.
 
-Slabost do sedaj obravnavanih tehnik še vedno ostaja - ko enkrat obtičimo v lokalnem
+Slabost do sedaj obravnavanih tehnik še vedno ostaja -- ko enkrat obtičimo v lokalnem
 maksimumu, se iz njega ne moremo rešiti. Naslednja metoda poskuša na svojevrsten, a zelo
 sistematičen način odpraviti to težavo.
 
@@ -402,10 +395,10 @@ sistematičen način odpraviti to težavo.
 Glede na to, da bi naj iskanje s tabuji odpravilo problem vračanja v isti lokalni maksimum,
 prepovedujemo izvajanje sprememb, s katerimi bi se vrnili v že najden lokalni maksimum.
 
-Rešitev se ponuja kar sama - za naslednjih ?? korakov prepovemo vsako spremembo, ki jo
+Rešitev se ponuja kar sama -- za naslednjih ?? korakov prepovemo vsako spremembo, ki jo
 opravimo v koraku optimizacije. Izbira konstante ?? je odvisna od samega problema, saj
 ne obstaja neki splošen ??, ki bi nas v vsakem primeru pripeljal iz lokalnega ekstrema.
-Imamo torej seznam prepovedanih sprememb - /tabujev/ in na vsakem koraku za izbrano
+Imamo torej seznam prepovedanih sprememb -- \emph{tabujev} in na vsakem koraku za izbrano
 spremembo preverimo, če je element seznama tabujev. Če spremembe ni v seznamu tabujev, jo
 preprosto izvedemo, v primeru, da je, pa postopek vrnemo na iskanje druge spremembe.
 Algoritem iskanja s tabuji se od lokalnega vzpenjanja torej razlikuje le v tem, da pred
@@ -452,19 +445,16 @@ točk, oziroma ki ima največjo vrednost kriterijske funkcije.
    za trenutno rešitev prešla zastavljeno zadovoljivo mejo, potem se program zaključi. Prav tako
    se zaključi, če po ?? korakih še vedno tičimo v istem lokalnem maksimumu.
 
-% Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
-% To popravite z ukazom `\noindent` ali pa tako, da odstranite prazno vrstico.
-% (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
+\noindent
 To je le ena izmed možnosti, kako zastaviti optimizacijski potek, s katero smo želeli predstaviti
 simbiozo opisanih metod. Nič ne bi bilo narobe, če bi za iskanje najboljšega urnika posamično
-uporabili katero izmed tehnik - mogoče bi katero izmed teh postopanj dalo celo boljši rezultat.
+uporabili katero izmed tehnik -- mogoče bi katero izmed teh postopanj dalo celo boljši rezultat.
 
 \subsection{Zaključek}
 
-% V spodnjem odstavku naj bodo črke G, U in I v "Graphical User Interface" podčrtane.
 Sledili smo receptu in s tem izdelali "okusen obrok", treba ga je le še ustrezno postreči
-gostom za mizo. S tem imamo v mislih grafični uporabniški vmesnik (Graphical
-User Interface), ki mora urnik uporabnikom predstaviti na razumljiv in
+gostom za mizo. S tem imamo v mislih grafični uporabniški vmesnik (\underline{G}raphical
+\underline{U}ser \underline{I}nterface), ki mora urnik uporabnikom predstaviti na razumljiv in
 pregleden način. Končnega izgleda izdelka nikakor ne smemo zanemariti, saj je ta med uporabniki
 vreden skoraj toliko kot kakovosten urnik. Odločili smo se, da za razmišljanje o tej temi vaši
 domišljiji pustimo prosto pot.
