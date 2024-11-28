@@ -3,6 +3,7 @@
 \usepackage[slovene]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath}
 
 \begin{document}
 
@@ -105,7 +106,9 @@ katere podatke naj vsebujejo.
 Kar pri treh razredih je kot podatek navedena tabela zasedenosti, zato si jo podrobneje
 oglejmo. Vsako tabelo določata njena velikost ter tip vrednosti. Naslednji izračun nam
 poda velikost tabele:
-??
+$$
+\text{velikostTabele} = \text{številoUrNaDan} \cdot \text{številoDelovnihDni}
+$$
 Če bi predpostavili, da študijski dan traja od sedme ure zjutraj do osmih zvečer in da
 imamo pet delovnih dni, je velikost naše tabele 65 polj. Velikost te tabele torej pove,
 koliko ur na teden obravnavamo. Ker se šolski tedni periodično ponavljajo, je seveda
@@ -199,16 +202,18 @@ sprejet s strani večine, pa bi se povečala.
 
 Kot zanimivost naj omenimo, da se nekateri programerji odločajo tudi za utežitev strogih
 omejitev s to razliko, da so vrednosti teh uteži izjemno velike, zato se bo algoritem
-(skoraj) vedno "odločil", da jih ne bo prekršil. Tak način uteževanja pride v poštev
+(skoraj) vedno ">odločil"<, da jih ne bo prekršil. Tak način uteževanja pride v poštev
 takrat, ko algoritem v osnovi ne zadosti strogim omejitvam urnika.
 
 Ko enkrat ustrezno nastavimo vrednosti uteži, je treba ugotoviti, kako bomo postopali
 v nadaljevanju. Algoritem za izdelavo urnikov je najbolje zasnovati tako, da po vsaki
 spremembi izmeri njegovo kakovost. Tako moramo na vsakem koraku ugotavljati, katere
-omejitve so bile kršene ter kolikokrat se kršitev pojavi. S ?? označimo število
-kršitev omejitve ??, z ?? pa njeno utež. Z naslednjo formulo izračunamo
+omejitve so bile kršene ter kolikokrat se kršitev pojavi. S $k_n$ označimo število
+kršitev omejitve $n$, z $u_n$ pa njeno utež. Z naslednjo formulo izračunamo
 kakovost urnika:
-??
+$$
+k_1 \cdot u_1 + k_2 \cdot u_2 + \ldots + k_{n-1} \cdot u_{n-1} + k_n \cdot u_n
+$$
 Nižja vrednost formule pomeni kakovostnejši urnik, izračunamo pa jo na vsakem koraku.
 Korak pri izdelavi urnika predstavlja eno izmed operacij nad njim (označuje njegovo
 spremembo).
@@ -281,8 +286,8 @@ Naslednje vrstice bodo pojasnile, kako implementirati postopek požrešne metode
 Zgoraj predstavljena shema je le grob opis postopka, ki ga nad urnikom izvaja požrešna metoda,
 zato si je smiselno podrobneje ogledati posamezne korake.
 
-   Z zanko se sprehodimo po vektorju vseh predmetov. Predmet na ??-tem koraku
-   označimo s ??.
+   Z zanko se sprehodimo po vektorju vseh predmetov. Predmet na $i$-tem koraku
+   označimo s $\text{predmet}_i$.
 
    Naslednja vgnezdena zanka nas popelje po vseh predavalnicah. Predavalnico na
    ??-tem koraku označimo s ??.
@@ -405,7 +410,7 @@ Algoritem iskanja s tabuji se od lokalnega vzpenjanja torej razlikuje le v tem, 
 izbiro spremembe preveri, če je vsebovana v seznamu prepovedanih sprememb. Poglejmo, zakaj
 je takšno postopanje smiselno.
 
-Naj bo ?? ter ?? sprememba urnika, ki nas je pripeljala v lokalni maksimum. To
+Naj bo $n = 100$ ter ?? sprememba urnika, ki nas je pripeljala v lokalni maksimum. To
 spremembo (npr. zamenjava ?? in ??) sedaj shranimo v
 seznam tabujev. V naslednjem koraku izvedemo spremembo ??, ki se prav tako shrani v
 seznam prepovedanih sprememb. Podobno naredimo za vse spremembe v nadaljnih korakih. S
@@ -452,7 +457,7 @@ uporabili katero izmed tehnik -- mogoče bi katero izmed teh postopanj dalo celo
 
 \subsection{Zaključek}
 
-Sledili smo receptu in s tem izdelali "okusen obrok", treba ga je le še ustrezno postreči
+Sledili smo receptu in s tem izdelali ">okusen obrok"<, treba ga je le še ustrezno postreči
 gostom za mizo. S tem imamo v mislih grafični uporabniški vmesnik (\underline{G}raphical
 \underline{U}ser \underline{I}nterface), ki mora urnik uporabnikom predstaviti na razumljiv in
 pregleden način. Končnega izgleda izdelka nikakor ne smemo zanemariti, saj je ta med uporabniki
