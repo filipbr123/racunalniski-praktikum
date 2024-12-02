@@ -13,7 +13,7 @@
 
 \newcommand{\m}{\mathcal{M}}
 
-\newenvironment{magic}[3]{\begin{table}
+\newenvironment{magic}[3]{\begin{table}[h!]
    \centering
    \caption{#1}
    \label{#2}
@@ -22,7 +22,7 @@
    \end{table}}
 
 {\theoremstyle{plain}
-\newtheorem{izrek}{Izrek}[section]
+\newtheorem{izrek}{Izrek}
 \newtheorem{posledica}[izrek]{Posledica}
 }
 {\theoremstyle{definition}
@@ -243,8 +243,8 @@ iz kvadrata Lo Shu z zrcaljenjem preko sredinske vodoravne črte.
       
 \begin{table}
    \centering
-   \label{table:stevila}
    \caption{Število različnih normalnih magičnih kvadratov}
+   \label{table:stevila}
    \begin{tabular}{lcccccc}\toprule
       &\multicolumn{5}{c}{točna vrednost} &približek \\
       \midrule
