@@ -4,6 +4,4 @@ Ctrl+X Izreži označeno v odložišče,
 Ctrl+V Prilepi vsebino odložišča,
 Ctrl+Z Razveljavi (undo). 
 
-filipbr123.github.io
-
-
+[filipbr123.github.io]
