@@ -32,10 +32,7 @@ code {
     color: #009966;
 }
 
-
-h1 {  
-    color: #330066; 
-}
+h1 {    color: #330066;}
 
 h2 {
     margin-top: 2em;
@@ -44,28 +41,24 @@ h2 {
 }
 
 #uvod {
-padding: 2em;
-background-color: rgb(51, 0, 102, 0.1);
+    padding: 2em;
+    background-color: rgb(51, 0, 102, 0.1);
 }
 
-.slika {
-    font-size: 0.9em;
+.slika{
+    font: 0.9em;
     width: 40%;
     text-align: left;
     float: right;
     margin-left: 2em;
 }
 
-.slika img {
+.slika img{
     width: 100%;
     height: auto;
-    border-radius: 40%;
+    border-radius: 50%;
 }
 
-.slika p:last-child {
-    font-size: 0.8em;
-}
+.slika p:last-child {font-size: 0.8em;}
 
-a::before {
-    content: "✓";
-}
+a::before {content: "♥ ";}
