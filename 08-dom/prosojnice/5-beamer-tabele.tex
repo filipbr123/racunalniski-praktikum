@@ -2,20 +2,20 @@
 	Včasih pride prav, da tabelo odkrivamo postopoma po vrsticah.
 	\begin{center}
 		\begin{tabular}{c|cccc}
-		   Oznaka & A & B & C & D \\ \hline
-		   X & 1 & 2 & 3 & 4 \\
-		   Y & 3 & 4 & 5 & 6 \\
-		   Z & 5 & 6 & 7 & 8
+		   Oznaka & A & B & C & D \\ \hline \pause
+		   X & 1 & 2 & 3 & 4 \\ \pause
+		   Y & 3 & 4 & 5 & 6 \\ \pause
+		   Z & 5 & 6 & 7 & 8 \pause
 		\end{tabular}
 	\end{center}
 \end{frame}
- 
 
+ 
 \begin{frame}{Odkrivanje tabele po stolpcih}
 	Tabelo lahko odkrivamo tudi po stolpcih, čeprav ni najlažje.
 
 	\begin{center}
-		\begin{tabular}{c|>{\onslide<2->}cccc<{\onslide}}
+		\begin{tabular}{c|>{\onslide<2->}c>{\onslide<3->}c>{\onslide<4->}c>{\onslide<5->}c<{\onslide}}
 		   Oznaka & A & B & C & D \\ \hline
 		   X & 1 & 2 & 3 & 4 \\
 		   Y & 3 & 4 & 5 & 6 \\
@@ -23,3 +23,16 @@
 		\end{tabular}
 	\end{center}
 \end{frame}
+
+%\begin{frame}{Odkrivanje tabele po stolpcih}
+%	Tabelo lahko odkrivamo tudi po stolpcih, čeprav ni najlažje.
+%
+%	\begin{center}
+%		\begin{tabular}{c|>{\onslide<2->}cccc<{\onslide}}
+%		   Oznaka & \onslide<1->A & \onslide<2->B & \onslide<3->C & \onslide<4->D \\ \hline
+%		   X & \onslide<1->1 & \onslide<2->2 & \onslide<3->3 & \onslide<4->4 \\
+%		   Y & \onslide<1->3 & \onslide<2->4 & \onslide<3->5 & \onslide<4->6 \\
+%		   Z & \onslide<1->5 & \onslide<2->6 & \onslide<3->7 & \onslide<4->8
+%		\end{tabular}
+%	\end{center}
+%\end{frame}
